@@ -97,7 +97,7 @@ body {
   padding-bottom: 2em;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 992px) {
 
   .express {
     max-width: 1500px;
