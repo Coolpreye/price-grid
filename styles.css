@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+    --primary-cyan: hsl(179, 62%, 43%);
+    --primary-brightyellow: hsl(71, 73%, 54%);
+
+    --neutral-lightgray: hsl(204, 43%, 93%);
+    --neutral-grayishblue: hsl(218, 22%, 67%);
+}
+
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+.express {
+  width: 90%;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.first h1 {
+  color: var(--primary-cyan);
+}
+
+.first h3 {
+  color: var(--primary-brightyellow);
+  font-weight: 700;
+}
+
+.first p {
+  color: var(--neutral-grayishblue);
+  line-height: 1.5em;
+}
+
+.price {
+  background: var(--primary-cyan);
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+.price h3 {
+  color: #fff;
+}
+
+.price .dol {
+  font-size: 2.5em;
+  color: #fff;
+}
+
+.price .per {
+  color: var(--neutral-lightgray);
+  opacity: .7;
+  margin-left: .7em;
+  font-size: 1.1em;
+}
+
+.price p {
+  color: var(--neutral-lightgray);
+  opacity: .7;
+}
+
+.price .link {
+  width: 100%;
+  padding: 1em;
+  background-color: var(--primary-brightyellow);
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 3px gray;
+  margin-top: 1.8em;
+}
+
+.link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.whyus {
+  background: hsl(179, 95%, 40%);
+  padding-top: 1em;
+}
+
+.whyus h3 {
+  color: #fff;
+}
+
+.whyus p {
+  width: 65%;
+  color: var(--neutral-lightgray);
+  opacity: .7;
+  padding-bottom: 2em;
+}
+
+@media screen and (min-width: 1400px) {
+
+  .express {
+    max-width: 1500px;
+  }
+
+  .first {
+    font-size: 1.6em;
+  }
+
+  .first p {
+    width: 70%;
+  }
+
+  .second {
+    display: grid;
+    grid-template-columns: repeat(1fr, 12);
+  }
+
+  .price {
+    grid-column: 1 / 7;
+    padding-left: 4.2em;
+    padding-right: 15em;
+    font-size: 1.5em;
+  }
+
+  .space {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .whyus {
+    grid-column: 7 / 13;
+    font-size: 1.8em;
+  }
+
+  .whyus p {
+    width: 40%;
+  }
+
+}
